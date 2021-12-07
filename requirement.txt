@@ -1,0 +1,15 @@
+
+pip==21.1.1
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.0
+tensorboard==2.7.0
+tensorflow-estimator==2.7.0
+tensorflow-io-gcs-filesystem==0.22.0
+tensorflow==2.7.0
+termcolor==1.1.0
+tokenizers==0.10.3
+torch==1.10.0
+tqdm==4.62.3
+transformers==4.12.5
+typing-extensions==4.0.1
+
