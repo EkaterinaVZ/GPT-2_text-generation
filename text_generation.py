@@ -1,8 +1,23 @@
 # https://huggingface.co/gpt2
+from fastapi import FastAPI
+from pydantic import BaseModel
 from transformers import pipeline, set_seed
 
 generator = pipeline('text-generation', model='gpt2')
 set_seed(42)
-print(generator("Hello, I'm a girl,", max_length=30, num_return_sequences=5))
 
 
+class Item(BaseModel):
+    text: str
+
+
+app = FastAPI()
+
+
+@app.post("/predict/")
+def predict(item: Item):
+    """ Text = text in English.
+    Examples: I have to go to the university., There is the house where my family lives., We go jogging every Sunday."""
+    return generator(item.text)
+# uvicorn text_generation:app
+# env\Scripts\activate.bat
