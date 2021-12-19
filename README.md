@@ -1,5 +1,5 @@
 # GPT-2_text-generation
-<a href=https://huggingface.co/gpt2>released at this page</a>
+<a href='https://huggingface.co/gpt2'>released at this page</a>
 
 Pretrained model on English language using a causal language modeling (CLM) objective. It was introduced in this paper and first released at this page.
 
