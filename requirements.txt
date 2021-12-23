@@ -1,5 +1,5 @@
 -f https://download.pytorch.org/whl/torch_stable.html
-pydantic==1.8.2
+pydantic
 fastapi
 uvicorn
 transformers
