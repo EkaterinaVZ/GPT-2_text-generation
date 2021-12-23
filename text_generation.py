@@ -13,6 +13,7 @@ class Item(BaseModel):
 
 app = FastAPI()
 
+
 @app.get("/")
 def root():
     return {"message": "Hello World!"}
@@ -25,3 +26,4 @@ def predict(item: Item):
     return generator(item.text)
 # uvicorn text_generation:app
 # env\Scripts\activate.bat
+
