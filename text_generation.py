@@ -13,6 +13,10 @@ class Item(BaseModel):
 
 app = FastAPI()
 
+@app.get("/")
+def root():
+    return {"message": "Hello World!"}
+
 
 @app.post("/predict/")
 def predict(item: Item):
