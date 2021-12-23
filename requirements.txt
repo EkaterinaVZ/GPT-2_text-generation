@@ -1,9 +1,7 @@
+-f https://download.pytorch.org/whl/torch_stable.html
 tokenizers==0.10.3
-torch==1.10.0
+torch==1.9.0+cpu
 unicorn==1.0.3
 transformers==4.12.5
 fastapi==0.70.1
 pydantic==1.8.2
-
-
-
